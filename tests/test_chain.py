@@ -1,4 +1,4 @@
-from langserve_launch_example import get_chain
+from langserve_launch_example import ask_question
 
 
 def test_my_chain() -> None:
@@ -6,5 +6,5 @@ def test_my_chain() -> None:
     from langchain.llms.human import HumanInputLLM
 
     llm = HumanInputLLM(input_func=lambda *args, **kwargs: "foo")
-    chain = get_chain(llm)
+    chain = ask_question(llm)
     chain.invoke({"text": "foo"})

@@ -32,14 +32,18 @@ By default, this uses OpenAI. So you will need to set your OpenAI API key:
 ```
 export OPENAI_API_KEY="sk-..."
 ```
+You can also use Gemini API key :
 
+```
+export GEMINI_API_KEY="sk-..."
+```
 To run the project locally, run
 
 ```
 make start
 ```
 
-This will launch a webserver on port 8001.
+This will launch a webserver on port 8000.
 
 Or via docker compose (does not use hot reload by default):
 
